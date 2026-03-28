@@ -13,3 +13,5 @@ if you want your current folder as root, just put a dot.
 **Chapters**
 
 - routing: https://youtu.be/Wt3isV2irrA?si=fhCTRMuGSSjZtuyz&t=3130
+- Basic State Management: https://youtu.be/Wt3isV2irrA?si=czlJSMcMzdawjq-j&t=3562
+- Side effect: https://youtu.be/Wt3isV2irrA?si=dJ37-3AxC2VyuUT0&t=4461

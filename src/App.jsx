@@ -1,33 +1,26 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
-import "./App.css";
-import SignUpForm from "./components/SignUpForm";
-import { Route, Routes } from "react-router-dom";
-
-function HomePage() {
-  return <h1>HomePage</h1>;
-}
-
-function AboutPage() {
-  return <h1>AboutPage</h1>;
-}
-
-function FallbackPage() {
-  return <h1>404: Nothing Found</h1>;
-}
+import { Link, Route, Routes } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import AboutPage from "./components/AboutPage";
+import LoginPage from "./components/LoginPage";
+import ProfilePage from "./components/ProfilePage";
+import Navbar from "./components/NavBar";
 
 function App() {
   return (
     <div>
-      <h3>Routing</h3>
-
+      <h3>Global State management with useContextHook</h3>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="*" element={<FallbackPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/auth" element={<LoginPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        {/* <Route path="*" element={<FallbackPage />} /> */}
       </Routes>
+
+      <p>Footer</p>
     </div>
   );
 }

@@ -8,6 +8,7 @@ if you want your current folder as root, just put a dot.
     npm create-vite@latest
     npm run dev
     npm i react-hook-form
+    npm i react-router-dom
 
 **Chapters**
 

@@ -8,7 +8,7 @@ import SignUpForm from "./components/SignUpForm";
 function App() {
   return (
     <div>
-      <h3>Signup form (without package) example</h3>
+      <h3>Signup form example</h3>
       <SignUpForm />
     </div>
   );

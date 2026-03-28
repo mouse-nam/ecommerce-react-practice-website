@@ -1,12 +1,14 @@
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 export default function SignUpForm() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  function handelSubmit(event) {
-    event.preventDefault();
-    alert(`Clicked by ${email} with pass: ${password}`);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  function onSubmitClick(data) {
+    alert(`Clicked by ${data.email} with pass: ${data.password}`);
   }
 
   return (
@@ -15,16 +17,21 @@ export default function SignUpForm() {
     >
       <h1>Sign Up</h1>
 
-      <form onSubmit={handelSubmit}>
+      <form onSubmit={handleSubmit(onSubmitClick)}>
         <div>
           <label>
             Email :
             <input
               type="email"
               placeholder="example@email.com"
-              onChange={(event) => setEmail(event.target.value)}
+              {...register("email", {
+                required: "Where is your email?",
+              })}
             />
           </label>
+          {errors.email && (
+            <p style={{ color: "crimson" }}> {errors.email.message} </p>
+          )}
         </div>
         <div>
           <label>
@@ -32,9 +39,18 @@ export default function SignUpForm() {
             <input
               type="password"
               placeholder="****"
-              onChange={(event) => setPassword(event.target.value)}
+              {...register("password", {
+                required: "Where is your pass?",
+                minLength: {
+                  value: 3,
+                  message: "minimum 3",
+                },
+              })}
             />
           </label>
+          {errors.password && (
+            <p style={{ color: "crimson" }}> {errors.password.message} </p>
+          )}
         </div>
 
         <button type="submit">Create Account</button>

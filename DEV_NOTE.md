@@ -23,4 +23,4 @@ if you want your current folder as root, just put a dot.
 ### Main project  
 - Initial Setup: https://youtu.be/Wt3isV2irrA?si=EgqZ2scj4BoE2i90&t=5389
 - Routing: https://youtu.be/Wt3isV2irrA?si=NgEfJh0L3gOnVP3W&t=5658
-- 
+- Boilerplates: https://youtu.be/Wt3isV2irrA?si=19B5CMBNaxt0gFh7&t=7605

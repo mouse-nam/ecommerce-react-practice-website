@@ -24,3 +24,9 @@ if you want your current folder as root, just put a dot.
 - Initial Setup: https://youtu.be/Wt3isV2irrA?si=EgqZ2scj4BoE2i90&t=5389
 - Routing: https://youtu.be/Wt3isV2irrA?si=NgEfJh0L3gOnVP3W&t=5658
 - Boilerplates: https://youtu.be/Wt3isV2irrA?si=19B5CMBNaxt0gFh7&t=7605
+- Global auth Context: https://youtu.be/Wt3isV2irrA?si=9zzeq0gBXrREhciT&t=7945
+- hooks intro: https://youtu.be/Wt3isV2irrA?si=JHH2GJ3MGBnhJdCS&t=9503
+
+
+### Warning
+- something went wrong: https://www.youtube.com/watch?v=Wt3isV2irrA&t=7945s

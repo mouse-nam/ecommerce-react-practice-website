@@ -13,7 +13,7 @@ export default function AuthProvider({ children }) {
 
   function signUp(email, password) {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
-    console.log("in sugn up");
+
     if (users.find((user) => user.email === email)) {
       return { success: false, error: "Email already exists." };
     }

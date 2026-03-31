@@ -29,4 +29,5 @@ if you want your current folder as root, just put a dot.
 
 
 ### Warning
-- something went wrong: https://www.youtube.com/watch?v=Wt3isV2irrA&t=7945s
+- something went wrong 01: https://www.youtube.com/watch?v=Wt3isV2irrA&t=7945s
+- day end 31.03.2026 : https://youtu.be/Wt3isV2irrA?si=KanK41y3OUGY_10Y&t=9662 (Custom Hook making)

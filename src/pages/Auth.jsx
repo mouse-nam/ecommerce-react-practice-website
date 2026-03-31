@@ -10,7 +10,7 @@ export default function Auth() {
 
   const navigate = useNavigate();
 
-  const { signUp, user, logout, login } = useContext(AuthContext);
+  const { signUp, login } = useContext(AuthContext);
   const {
     register,
     handleSubmit,

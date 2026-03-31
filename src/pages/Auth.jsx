@@ -28,7 +28,6 @@ export default function Auth() {
     }
     console.log(result);
     if (result.success) {
-      // alert("yee");
       navigate("/");
     } else {
       setError(result.error);
@@ -39,12 +38,12 @@ export default function Auth() {
     <div className="page">
       <div className="container">
         <div className="auth-container">
-          {user && (
+          {/* {user && (
             <div>
               <p>User Login: {user.email} </p>{" "}
               <button onClick={() => logout()}>Logout</button>
             </div>
-          )}
+          )} */}
           <h1 className="page-title">
             {mode === "signup" ? "Sign Up" : "Login"}
           </h1>

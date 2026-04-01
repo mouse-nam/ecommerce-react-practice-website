@@ -27,6 +27,7 @@ if you want your current folder as root, just put a dot.
 - Global auth Context: https://youtu.be/Wt3isV2irrA?si=9zzeq0gBXrREhciT&t=7945
 - hooks intro: https://youtu.be/Wt3isV2irrA?si=JHH2GJ3MGBnhJdCS&t=9503
 - Dynamic routing: https://youtu.be/Wt3isV2irrA?si=P24KeOvLKMB-P67M&t=9777
+- Cart logic: https://youtu.be/Wt3isV2irrA?si=k2gi-YQpCHLm_1Co&t=10577
 
 
 ### Warning

@@ -30,12 +30,32 @@ export default function CartProvider({ children }) {
       .filter((item) => item.product);
   }
 
-  function updateQuantity(id, quantity) {}
-  function removeFromCart(id) {}
-  function getCartTotal() {
-    return 123.356;
+  function updateQuantity(productId, quantity) {
+    if (quantity <= 0) {
+      removeFromCart(productId);
+      return;
+    }
+    setCartItems(
+      cartItems.map((item) =>
+        item.id === productId ? { ...item, quantity } : item,
+      ),
+    );
   }
-  function clearCart() {}
+  function removeFromCart(productId) {
+    setCartItems(cartItems.filter((item) => item.id !== productId));
+  }
+  function getCartTotal() {
+    const total = cartItems.reduce((total, item) => {
+      const product = getProductById(item.id);
+      const price = product ? product.price * item.quantity : 0;
+      return total + price;
+    }, 0);
+    console.log(total);
+    return total;
+  }
+  function clearCart() {
+    setCartItems([]);
+  }
 
   return (
     <CartContext.Provider

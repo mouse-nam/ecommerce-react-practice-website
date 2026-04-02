@@ -28,6 +28,7 @@ if you want your current folder as root, just put a dot.
 - hooks intro: https://youtu.be/Wt3isV2irrA?si=JHH2GJ3MGBnhJdCS&t=9503
 - Dynamic routing: https://youtu.be/Wt3isV2irrA?si=P24KeOvLKMB-P67M&t=9777
 - Cart logic: https://youtu.be/Wt3isV2irrA?si=k2gi-YQpCHLm_1Co&t=10577
+- Checkout page: https://youtu.be/Wt3isV2irrA?si=UxtoqnjY13Jihgj5&t=11380
 
 
 ### Warning
